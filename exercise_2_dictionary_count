@@ -1,0 +1,24 @@
+#2: Viết function trả về một dictionary đếm số lượng chữ xuất hiện trong một từ, với key là chữ cái và value là số lần xuất hiện
+
+def count_letter(string):
+    # Tạo một dictionary rỗng để lưu kết quả
+    letter_count = {}
+    
+    # Duyệt qua từng ký tự trong chuỗi
+    for letter in string:
+        # Nếu ký tự đã tồn tại trong dictionary, tăng giá trị đếm lên 1
+        if letter in letter_count:
+            letter_count[letter] += 1
+        # Nếu ký tự chưa tồn tại trong dictionary, thêm ký tự vào và gán giá trị đếm là 1
+        else:
+            letter_count[letter] = 1
+    
+    # Trả về dictionary kết quả
+    return letter_count
+
+# Ví dụ sử dụng
+string1 = 'Jane'
+string2 = 'AIO_VietNam'
+
+print(count_letter(string1))
+print(count_letter(string2))
