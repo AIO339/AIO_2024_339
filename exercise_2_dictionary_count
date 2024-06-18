@@ -1,5 +1,4 @@
-#2: Viết function trả về một dictionary đếm số lượng chữ xuất hiện trong một từ, với key là chữ cái
-và value là số lần xuất hiện
+#2: Viết function trả về một dictionary đếm số lượng chữ xuất hiện trong một từ, với key là chữ cái và value là số lần xuất hiện
 
 def count_letter(string):
     # Tạo một dictionary rỗng để lưu kết quả
